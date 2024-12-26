@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Back to Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Restaurant List</h2>
+
+        <!-- Search Bar -->
+        <div>
+            <input type="text" id="search" placeholder="Search for a restaurant..." onkeyup="searchRestaurant()">
+        </div>
+
+        <table id="restaurant-table">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Cuisine</th>
+                    <th>Phone</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="restaurant-list"></tbody>
+        </table>
+
+        <h3>Add a New Restaurant</h3>
+        <form id="add-restaurant-form">
+            <label for="name">Restaurant Name:</label>
+            <input type="text" id="name" required><br><br>
+            <label for="cuisine">Cuisine:</label>
+            <input type="text" id="cuisine" required><br><br>
+            <label for="address">Address:</label>
+            <input type="text" id="address" required><br><br>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" required><br><br>
+            <label for="rating">Rating (1-5):</label>
+            <input type="number" id="rating" min="1" max="5" required><br><br>
+            <label for="image">Image URL:</label>
+            <input type="text" id="image" required><br><br>
+            <button type="submit">Add</button>
+        </form>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchRestaurants();
+        });
+
+        // Fetch and display the list of restaurants
+        function fetchRestaurants() {
+            fetch('http://localhost:3000/restaurants')
+                .then(response => response.json())
+                .then(data => {
+                    const restaurantList = document.getElementById('restaurant-list');
+                    restaurantList.innerHTML = ''; // Clear previous entries
+
+                    data.forEach(restaurant => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td><img src="${restaurant.image}" alt="${restaurant.name}"></td>
+                        <td>${restaurant.nom}</td>
+                            <td>${restaurant.specialite}</td>
+                            <td>${restaurant.telephone}</td>
+                            <td>
+                                <button onclick="deleteRestaurant(${restaurant.id})">Delete</button>
+                            
+                            </td>
+                        `;
+                        restaurantList.appendChild(row);
+                    });
+                })
+                .catch(error => console.error('Error fetching restaurants:', error));
+        }
+
+        // Delete a restaurant by its ID
+        function deleteRestaurant(id) {
+            fetch(`http://localhost:3000/restaurants/${id}`, {
+                method: 'DELETE'
+            })
+            .then(() => {
+                alert('Restaurant deleted');
+                fetchRestaurants();
+            })
+            .catch(error => console.error('Error deleting restaurant:', error));
+        }
+
+    
+
+        // Add a new restaurant through the form
+        document.getElementById('add-restaurant-form').addEventListener('submit', (event) => {
+            event.preventDefault(); // Prevent form submission
+
+            const newRestaurant = {
+                name: document.getElementById('name').value,
+                cuisine: document.getElementById('cuisine').value,
+                image: document.getElementById('img').value,
+                address: document.getElementById('address').value,
+                phone: document.getElementById('phone').value,
+                rating: document.getElementById('rating').value
+            };
+
+            fetch('http://localhost:3000/restaurants', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(newRestaurant)
+            })
+            .then(() => {
+                alert('New restaurant added');
+                fetchRestaurants(); // Refresh the list
+            })
+            .catch(error => console.error('Error adding restaurant:', error));
+        });
+
+        // Search for restaurants by name or cuisine
+        function searchRestaurant() {
+            const searchQuery = document.getElementById('search').value.toLowerCase();
+            const rows = document.querySelectorAll('#restaurant-list tr');
+
+            rows.forEach(row => {
+                const name = row.querySelector('td:nth-child(2)').textContent.toLowerCase();
+                const cuisine = row.querySelector('td:nth-child(3)').textContent.toLowerCase();
+
+                if (name.includes(searchQuery) || cuisine.includes(searchQuery)) {
+                    row.style.display = ''; // Show row
+                } else {
+                    row.style.display = 'none'; // Hide row
+                }
+            });
+        }
+    </script>
+</body>
+</html>

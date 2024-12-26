@@ -1,0 +1,33 @@
+img {
+    width: 100px; /* Make sure image fits */
+    height: auto;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+.search {
+    width: 150px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 1px solid #533010;
+}
+.searchButton {
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.searchButton img {
+    width: 100%;
+    height: 100%;
+}

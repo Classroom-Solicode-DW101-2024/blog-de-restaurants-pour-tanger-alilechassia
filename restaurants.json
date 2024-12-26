@@ -1,0 +1,167 @@
+[
+    {
+      "id": 1,
+      "nom": "Le Saveur du Poisson",
+      "adresse": "Rue Ibn Rochd, Tanger",
+      "telephone": "+212 5393-36326",
+      "email": "contact@saveurdupoisson.com",
+      "specialite": "Poisson et Fruits de mer",
+      "image": "https://img.lovepik.com/photo/40267/5344.jpg_wh860.jpg",
+      "note": 4.7,
+      "site_web": "https://web.facebook.com/pages/Restaurant-Le-Saveur-De-Poisson/195976703888314?_rdc=1&_rdr#"
+    },
+    {
+      "id": 2,
+      "nom": "El Morocco Club",
+      "adresse": "Place du Tabor, Kasbah, Tanger",
+      "telephone": "+212 (0) 5 39 94 81",
+      "email": "reservation@elmoroccoclub.ma",
+      "specialite": "Cuisine internationale",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyCpuwD2xkKwnJ8q3lfaPUeX0V-w4ajj-7NQ&s",
+      "note": 4.6,
+      "site_web": "https://elmoroccoclub.ma/"
+    },
+    {
+      "id": 3,
+      "nom": "Riad Al Andalous",
+      "adresse": "Quartier Marshan, Tanger",
+      "telephone": "+212 623-0103922",
+      "email": "alandalousriad@gmail.com",
+      "specialite": "Cuisine marocaine traditionnelle",
+      "image": "https://media-cdn.tripadvisor.com/media/photo-s/1b/0b/25/96/fritura-de-pescado-y.jpg",
+      "note": 4.8,
+      "site_web": "https://web.facebook.com/Cafe.Restaurant.Marocain/?locale=fr_FR&_rdc=1&_rdr#"
+    },
+    {
+      "id": 4,
+      "nom": "La Table du Marché",
+      "adresse": "Avenue Mohammed VI, Tanger",
+      "telephone": "+212 539 654 321",
+      "email": "b.rmc@hotmail.fr",
+      "specialite": "Cuisine française",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg8K7fBzs1yoqhFqU645Q_ZKIbb4avv75W-w&s",
+      "note": 4.5,
+      "site_web": "http://www.latable.com"
+    },
+    {
+      "id": 5,
+      "nom": "Café Hafa",
+      "adresse": "Rue Hafa, Marshan, Tanger",
+      "telephone": "+212 539 123 789",
+      "email": "",
+      "specialite": "Thé à la menthe et snacks",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpj71I8JIAecYTcOcEcuzNL9zhf0ktyknRaQ&s",
+      "note": 4.3,
+      "site_web": "https://web.facebook.com/cafe.hafa?_rdc=1&_rdr#"
+    },
+    {
+      "id": 6,
+      "nom": "Anna & Paolo",
+      "adresse": "Rue de la Plage, Tanger",
+      "telephone": "+212 0539944617",
+      "email": "contact@annaetpaolo.com",
+      "specialite": "Cuisine italienne",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBKd2-Onzc-4sHqhe3h32UcZM60CYhTwx6vg&s",
+      "note": 4.6,
+      "site_web": ""
+    },
+    {
+      "id": 7,
+      "nom": "Le Tangerino",
+      "adresse": "Boulevard Mohamed VI, Tanger",
+      "telephone": "+1 781-281-9475",
+      "email": "info@tangerino.com",
+      "specialite": "Tapas et cuisine espagnole",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8AkDD37XN5LLG0vueYncJ1JKh6ddKy9YrSg&s",
+      "note": 4.4,
+      "site_web": "http://www.tangerino.com"
+    },
+    {
+      "id": 8,
+      "nom": "Restaurant El Korsan",
+      "adresse": "Hôtel El Minzah, Rue de la Liberté, Tanger",
+      "telephone": "+212 539 331 111",
+      "email": "elkorsan@elminzah.com",
+      "specialite": "Cuisine marocaine traditionnelle",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIEj6V1thkUCsXciHolY-NaC1ogIT-0tvv3Q&s",
+      "note": 4.9,
+      "site_web": "http://www.elminzah.com"
+    },
+    {
+      "id": 9,
+      "nom": "Abou Tayssir",
+      "adresse": "Rue de Belgique, Tanger",
+      "telephone": "+212 644-660292",
+      "email": "",
+      "specialite": "Cuisine syrienne et libanaise",
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/cb/61/df/otori-sushi-poke.jpg?w=900&h=500&s=1",
+      "note": 4.7,
+      "site_web": "https://www.instagram.com/restauaboutayssir/"
+    },
+    {
+      "id": 10,
+      "nom": "La Villa Ô Saveur",
+      "adresse": "Route de Malabata, Tanger",
+      "telephone": "+212 539949660",
+      "email": "contact@villaosaveur.com",
+      "specialite": "Cuisine méditerranéenne",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbBIWoZ109DvbS7LxSJQL4NCf6n8iZ_jq-4Q&s",
+      "note": 4.5,
+      "site_web": ""
+    },
+    {
+      "id": 11,
+      "nom": "Restaurant Dar Lidam",
+      "adresse": "Kasbah, Tanger",
+      "telephone": "+212 539 123 111",
+      "email": "",
+      "specialite": "Cuisine marocaine",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Hl3iOkL4VNXql7F2O2VZtzomIcmLYcBASg&s",
+      "note": 4.6,
+      "site_web": ""
+    },
+    {
+      "id": 12,
+      "nom": "Otori Sushi",
+      "adresse": "Centre Ville, Tanger",
+      "telephone": "+1 339-222-5134",
+      "email": "info@otori.com",
+      "specialite": "Cuisine japonaise",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpUpD0IUkCUhZNPzE07aK6R4ScUkbUkoIiNw&s",
+      "note": 4.4,
+      "site_web": "http://www.otori.com"
+    },
+    {
+      "id": 13,
+      "nom": "Le Mirage",
+      "adresse": "Cap Spartel, Tanger",
+      "telephone": "+212 539 333332",
+      "email": "reservations@lemirage.com",
+      "specialite": "Poissons et fruits de mer",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZjVJm3j9Ee56T2tUyU65uXSGr3KkL6NBaTg&s",
+      "note": 4.8,
+      "site_web": "http://www.lemirage.com"
+    },
+    {
+      "id": 14,
+      "nom": "Café de Paris",
+      "adresse": "Place de France, Tanger",
+      "telephone": "+212 539 654 987",
+      "email": "",
+      "specialite": "Café et pâtisserie",
+      "image": "https://media.istockphoto.com/id/1162625368/fr/photo/coupe-de-caf%C3%A9-et-p%C3%A2tisserie-fra%C3%AEche-%C3%A0-paris-france.jpg?s=612x612&w=0&k=20&c=ZVKRacLdCGV8evllHT4YAj8PDoe14mEd8xI0whdVXcE=",
+      "note": 4.2,
+      "site_web": ""
+    },
+    {
+      "id": 15,
+      "nom": "La Fabrique",
+      "adresse": "Iberia, Tanger",
+      "telephone": "+212 539 111 222",
+      "email": "info@lafabrique.com",
+      "specialite": "Cuisine fusion",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBGKRmS-5nIxJTCnxNVUWAJ9Xn7-WCtg6jEYndb_NYtir4gRjkJ14_PdwYbyU7cK9Scwk&usqp=CAU",
+      "note": 4.7,
+      "site_web": "http://www.lafabrique.com"
+    }
+  ]
